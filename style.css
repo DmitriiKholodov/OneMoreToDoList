@@ -1,1 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Marmelad|Neucha|Yanone+Kaffeesatz:200,300,400&subset=cyrillic');
 
+* {
+	margin:0 ;
+	padding: 0;
+}
+
+body {
+	background-color: #edf0f1;
+}
+
+header {
+	z-index: 5;
+	width: calc(100% - 30px);
+	padding: 15px;
+	position: fixed;
+	background-color: rgba(97, 204, 124, 1);
+	height: 54px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	top: 0;
+	left: 0;
+	box-shadow: 0px 1px 2px rgba(44,62,80,0.1);
+}
+
+header input {
+	font-family: 'Neucha', cursive;
+	letter-spacing: 1px;
+	/*text-transform : uppercase;*/
+	font-size: 18pt;
+	width: 100%;
+	float: left;
+	height: 50px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: none;
+	background-color: rgba(255, 255, 255, 0.8);
+	color: rgba(0, 0, 0, 0.7);;
+	padding: 0 54px 0 16px;
+}
+
+input {
+		outline: 0;
+}
+
+input::placeholder {
+	font-size: 20px;
+}
+
+#add-new-task-btn {
+	font-size: 30pt;
+	color: rgba(97, 204, 124, 1);
+	position: absolute;
+	float: right;
+	border: 1px solid rgba(97, 204, 124, 0.4);
+	border-radius: 33px;
+	width: 66px;
+	height: 66px;
+	right: 13px;
+	top: 7px;
+	background-color: rgba(255, 255, 255, 0.9);
+	outline: 0;
+}
+
+.content {
+	position: relative;
+	top: 100px;
+	padding: 0 20px 20px 20px;
+	text-align: center;
+}
+
+.task {
+	font-family: 'Neucha', cursive;
+	letter-spacing: 1px;
+	color: rgba(0, 0, 0, 0.7);;
+	font-size: 14pt;
+	text-align: left;
+	z-index: 2;
+	width: calc(100% - 30px);
+	background-color: white;
+	height: 20px;
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 15px;
+	box-shadow: 0px 1px 2px rgba(44,62,80,0.1);
+	position: relative;
+}
+
+.task:last-child {
+	margin: 0;
+}
+
+.tasks-cutter {
+  height: 2px;
+  width: 30%;
+  background-color: #45503b;
+  position: relative;
+  top: 100px;
+  margin-bottom: 20px;
+  left: 35%;
+}
+
+.tasks-date-block {
+	font-family: 'Neucha', cursive;
+	font-style: italic;
+	letter-spacing: 1px;
+	color: #45503b;
+	position: relative;
+	top: 90px;
+	font-size: 14pt;
+	height: 20px;
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+}
+
+.task-buttons {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100px;
+	height: 50px;
+}
+
+.button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+  appearance: none;
+  border: 0;
+  background: none;
+	width: 50px;
+	height: 50px;
+	outline: 0;
+}
+
+.task-text {
+	font-size: 18pt;
+	padding-top: 12px;
+	display: block;
+	float: left;
+}
+
+#completed > .task {
+	background-color: rgba(0,128,0,0.3);
+}
+
+#completed > .task > .task-buttons > .done.button > .fill.done {
+		background-color: green;
+		fill: white;
+}
+
+.fill.done {
+	fill: green;
+	border-radius: 15px;
+	border: 1px solid green;
+}
+
+.fill.remove {
+	border: 1px solid rgba(255,255,255,0);
+	fill: black;
+}
+
+.fill.remove:hover {
+	border: 1px solid rgba(255,255,255,0);
+	fill: red;
+}
+
+p {
+	font-family: 'Neucha', cursive;
+	letter-spacing: 1px;
+	font-size: 22px;
+	color: #45503b
+}
